@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartões de Crédito</title>
+</head>
+<body>
+    <h1>Cartões de Crédito</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Número do Cartão</th>
+            <th>Validade</th>
+            <th>Código de Segurança</th>
+        </tr>
+        {% for cartao in cartoes %}
+        <tr>
+            <td>{{ cartao[0] }}</td>
+            <td>{{ cartao[1] }}</td>
+            <td>{{ cartao[2] }}</td>
+            <td>{{ cartao[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
